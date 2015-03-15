@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -10,20 +11,40 @@
     			padding: 0;
     			margin: 0;
   			}
-  			.fit { /* set relative picture size */
+  			.fit {
     			max-width: 100%;
-    			max-height: 100%;
+					max-height:100%;
   			}
   			.center {
     			display: block;
     			margin: auto;
   			}
-</style>
+				body {
+    			background-color: #FFC107;
+					color: #FAFAFA;
+					text-align: center;
+					font-family: 'Montserrat', sans-serif;
+				}
+				a {
+					color: #FAFAFA;
+					text-decoration: underline;
+				}
+				.grad {
+    			background: -webkit-radial-gradient(#FFECB3, #FFC107); /* For Safari 5.1 to 6.0 */
+			    background: -o-radial-gradient(#FFECB3, #FFC107); /* For Opera 11.6 to 12.0 */
+			    background: -moz-radial-gradient(#FFECB3, #FFC107); /* For Fx 3.6 to 15 */
+    			background: radial-gradient(#FFECB3, #FFC107); /* Standard syntax (must be last) */
+				}
+		</style>
 	</head>
-<body>
-	<div class="container">
-		<img class="center fit" src="img/SiteCoverImage.jpg" alt="Clouds">
-	</div>
+<body class="grad">
+	<h1><strong>TipTapGo!</strong></h1>
+	<h2>Put the fun back into learning.</h2>
+	<img class="center fit" src="img/Elgo-Excited.png" alt="Elgo" style="width:40%">
+	<h4><a href="https://docs.google.com/a/tiptapgo.co/forms/d/1xVW10Qo6YbGsecFzl0MgB9mk15p-IS1zlEmLSQXIN3U/viewform">Get Early Access</a></h4>
+
+	<h4><a href="mailto:rahul@tiptapgo.co" target="_top">Contact Us</a></h4>
+
 	<script type="text/javascript" language="JavaScript">
   		function set_body_height() { // set body height = window height
     		$('body').height($(window).height());
@@ -32,6 +53,6 @@
     		$(window).bind('resize', set_body_height);
     		set_body_height();
   		});
-</script>
+	</script>
 </body>
 </html>
